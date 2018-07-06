@@ -1,10 +1,9 @@
-Coding Language
+**Coding Language**
 * [C](C/)
 * [Python](Python/)
-    * [Introduction](Python/Introduction/)
 * [SQL](MySQL/)
 * [Markdown](Markdown/)
 
-Tools
+**Tools**
 * [Django](Django/)
 * [Git](Git/)
