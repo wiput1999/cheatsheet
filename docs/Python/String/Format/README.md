@@ -58,22 +58,6 @@ print("My name is %s and my age is %d years old" %(first_name, age))
 และโจทย์ต่อไปก็คือการกำหนดขนาดของมันนั่นเอง
 เพราะถ้าเราสามารถกำหนดขนาด โดยการใช้ [] ได้แล้ว พี่มงก็ว่า เราสามารถทำกับ % ได้เช่นเดียวกัน
 
-ไปดูตัวอย่างกันครับ
-
-โดยปกติแล้ว เราก็จะใช้ [] แบบนี้
-```python
-first_name = "Kumamon"
-print("My name is", first_name[:4])
-```
-ก็จะได้ผลออกมาเป็น "My name is Kuma" นั่นเอง
-
-แต่เราเรียน % แล้ว เราก็ต้องใช้มันอ่ะเนอะ ก็เลยเป็นแบบนี้ไป
-
-```python
-first_name = "Kumamon"
-print("My name is %s", %first_name[:4])
-```
-
 ### String Alignment
 แต่เนื่องจากว่า Python ก็ได้จัดการทำ Aligment มาให้ด้วย<br>
 เช่นต้องการให้เป็นแบบนี้
@@ -100,7 +84,34 @@ print("My Name is %20s naja" %first_name)
 - เป็นเลขจำนวนเป็นลบ ก็จะชิดซ้าย
 
 ### String Cut Length
+หลังจากได้เรียนการ align กันมาแล้ว ก็จะบอกว่ายังมี function นึงที่น้องๆอาจจะยังไม่เคยเจอ นั่นก็คือการตัดให้ได้ขนาด x ตัว
 
+ไปดูตัวอย่างกันครับ
+
+โดยปกติแล้ว เราก็จะใช้ [] แบบนี้
+```python
+first_name = "Kumamon"
+print("My name is", first_name[:4])
+```
+ก็จะได้ผลออกมาเป็น "My name is Kuma" นั่นเอง
+
+แต่เราเรียน % แล้ว เราก็ต้องใช้มันอ่ะเนอะ ก็เลยเป็นแบบนี้ไป
+
+```python
+first_name = "Kumamon"
+print("My name is %s", %first_name[:4])
+```
+
+แต่ก็ยังไม่[สุดๆไปเลย เหมือนเพลงของนูโว](https://www.youtube.com/watch?v=LKLH2E7uaMY) เพราะยังทำแบบนี้ได้อีกครับ
+```python
+first_name = "Kumamon"
+print("My name is %.4s", %first_name)
+```
+
+แต่ต้องเตือนไว้ก่อน ว่าถ้าใส่ตัวเลขไปมากกว่าที่ array string มีอยู่ ก็จะเป็นแบบนี้ครับ
+```python
+
+```
 
 ### Recap on usage
 **String Type**<br>

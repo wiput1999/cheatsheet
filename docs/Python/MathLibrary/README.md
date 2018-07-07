@@ -1,71 +1,87 @@
 # Math Library
-In Python, we cannot calculate the complicate numbers by code, we use the function to make it easier to calculate everything. This will be the list of function that you should know before test!
+หลังจากน้องๆได้ลองเล่น function แบบ built-in กันไปแล้ว<br>
 
-Most of these functions are possible to be in any PSIT test. Some that are not listed are too complicate. But you can see it [here](https://docs.python.org/3.6/library/math.html)
+สำหรับน้องๆที่ยังไม่เข้าใจว่า built-in function คืออะไร ก็ให้ไปเรียน concept ของมันซะก่อนนะครับ
+
+แต่ใน lecture นี้ พี่มงก็จะทำการอธิบายเกี่ยวกับ library `math` นั่นเอง
+
+ใน library นี้ก็จะมีฟังก์ชั่นที่น้องๆสามารถเอาไปช่วยคำนวณเลขแบบ advanced ได้โดยไม่ต้องเขียนวิธีการคำนวณเอง<br>
+แต่ขั้นแรกต้องอธิบายว่า Library คืออะไรก่อน
+
+### What is Library
+> In computer science, a library is a collection of non-volatile resources used by computer programs, often for software development. These may include configuration data, documentation, help data, message templates, pre-written code and subroutines, classes, values or type specifications. -- Wikipedia.com
+
+ก็จะสรุปได้ว่า เป็น collection ที่มีฟังก์ชั่นที่เขียนไว้แล้ว ให้นักพัฒนาได้เอาไปใช้นั่นเอง
 
 ## Importing Library
-Before using math library, you need to import it from the built-in library. If the library is imported, you can use their methods (function) inside that library
+ถ้าน้องๆต้องการที่จะใช้ `library math` น้องๆก็จำเป็นที่ต้องโหลดมันซะก่อน โดยมีอยู่ 2 วิธีครับ
 
+- โหลดตัว function ที่จะใช้จริง
+- โหลด function ทุกตัวที่อยู่ใน library
+
+แต่เนื่องจากว่า ถ้าน้องโหลดทุกตัวมา มันก็จะกินทรัพยากรเครื่องมากกว่า แต่ก็ไม่เป็นอะไรหรอกครับ ทรัพยากรเหลือเยอะแยะนะ อิอิ
+
+### โหลดทุกตัว
 ```python
 import math
 ```
 
-or
+หรือหากว่าน้องอยากที่จะเปลี่ยนชื่อ library ไปเป็นตามสไตล์ของน้องเอง ก็สามารถทำได้ครับ
 
 ```python
 import math as quickmaffs
 ```
-with that, you can call `quickmaffs.pi()` equivalent to `math.pi()`
+โดยคำว่า `as` นั้นจะทำให้น้องเปลี่ยนชื่อของ library ได้ทำให้น้องเรียก `quickmaffs.ceii()` แทน `math.ceil()` ได้ครับ
 
-## Sample import on multiple functions
+ตัวอย่างการใช้งาน function เมื่อโหลดมาแล้ว
 ```python
-import math
-
-def main(value, total):
-import os
-print(value)
-print(total)
-x = math.fabs(calculate(value, total))
-print(x)
-
-def calculate(value, total):
-return math.ceil(value / total)
-
-main(12, 45)
+print(math.ceil(12.5))
 ```
-by putting a `import math` outside the function makes it a global type of package.
+สังเกตว่าจะมีการเขียน `math` ไว้หน้าชื่อฟังก์ชั่นด้วยนะครับ
 
-## Using methods in library
-Using the methods in library is easy is this. Program will find the absolute value (value is -2.55).
+
+!> แต่เปลี่ยนแล้ว เปลี่ยนกลับไม่ได้นาจาา ยกเว้นว่าจะ import ใหม่ครับ
+
+### โหลดบางตัว
+ใน ณ​ ตอนนี้อาจจะยังไม่ต้องเรียนก็ได้ครับ เพราะอันที่แล้วก็เพียงพอ แต่ถ้าอยากก็ไม่ว่าอะไรครับ
+
 ```python
-import math
-math.fabs(-2.55)
+from math import ceil
 ```
 
-## Basic math functions
-These are just a few elements in math function. There will be a help in Think Python book.
+สังเกตว่าชื่อ library อยู่ที่หลัง `from` และชื่อ function จะอยู่หลัง `import`
 
-### Absolute Values
+ทำให้การเรียกใช้งานไม่ต้องมี `math.` แล้ว เรียกเหมือนฟังก์ชั่นธรรมดาได้เลย
+
+ตัวอย่าง
+```python
+print(ceil(12.5))
+```
+
+## ฟังก์ชั่นที่ควรรู้ไว้
+เนื่องจากมันมีเยอะมากๆๆๆๆๆ พี่มงก็เลยเลือกอันที่ต้องใช้บ่อยๆมาแล้วกันครับ อันอื่นๆ น้องอาจจะเข้าไปดูได้ในเว็บไซต์ของ Python.org ครับ
+
+**Absolute Values**
 Make the integer or float becomes positive only.
 ```python
 math.fabs([value])
 ```
 or use built-in function `abs()` instead.
 
-### Using exponent
+**Exponent**
 or use exponent \*\* sign
 Returns value as x**y
 ```python
 math.pow([value], [exponent power])
 ```
 
-### Using root
+**Root of n**
 Returns value as x^1/2 (square root)
 ```python
 math.sqrt([float or integer])
 ```
 
-### Using logarithms
+**Logarithms**
 Returns the value as log [base] [number]
 ```python
 math.log([number], [base])
@@ -78,31 +94,32 @@ math.log2([number])
 math.log10([number])
 ```
 
-### Using ceiling (round up)
+**Rounding Up**
 Returns value as integer (rounding up)
 ```python
 math.ceil([float or integer])
 ```
 
-### Using floor (round down)
+**Rounding Down**
 Returns value as integer (rounding down)
 ```python
 math.floor([float or integer])
 ```
 
-### Using factorial
+**Factorial**
 Returns the value of the value factorial
 ```python
 math.factorial([integer])
 ```
 
-### Finding Greatest Common Divisor (GCD)
+**Calculate GCD**
 Returns the GCD of integer A and B
 ```python
 math.gcd([integer_a], [integer_a])
 
 ```
-### Using constant Pi value (π)
+
+**Pi Constant**
 Returns the value of pi (more accurate than 22/7, but not for 355/113)
 ```python
 math.pi()
@@ -124,14 +141,9 @@ math.arcsin([radians])
 math.arccos([radians])
 math.arctan([radians])
 ```
+สังเกตดูครับ ว่ามันใช้ `radians` ไม่ใช่ `degrees` ครับ
 
-If the number is still a `degree`, you need to change it to `radians` by using
-
+**เปลี่ยน Degrees -> Radians**
 ```python
 math.radians([degree])
-```
-
-If you already know some angle, and you want to find hypotenuse length, use
-```python
-math.hypot([opposite/adjacent], [opposite/adjacent])
 ```
