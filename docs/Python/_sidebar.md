@@ -4,6 +4,7 @@ and integrate systems more effectively.
 
 **Fundamental Python**
 * [Introduction](Python/Introduction/)
+* [Python Logic](Python/Logic/)
 * [I/O](Python/IO/)
 * [String](Python/String/)
 * [Condition](Python/Condition/)
@@ -19,6 +20,7 @@ and integrate systems more effectively.
 * [Dealing with PyLint + PEP8](Python/PyLint)
 
 **Advanced Python**
+* [Runtime on Python](Python/Runtime/)
 * [Try and Except](Python/TryAndExcept/)
 * [Raising and Catching Exceptions](Python/Exception/)
 * [Class and Objects](Python/OOP/)
