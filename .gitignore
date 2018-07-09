@@ -3,3 +3,4 @@ yarn.lock
 docs/.vuepress/dist
 .DS_Store
 .idea/
+.vscode
