@@ -8,13 +8,13 @@ You can use Markdown most places around GitHub:
 - Files with the .md or .markdown extension
 
 Reference:<br>
-https://guides.github.com/features/mastering-markdown/
+[https://guides.github.com/features/mastering-markdown/](https://guides.github.com/features/mastering-markdown/)
 
-- [Text](text.md)
-- [List](list.md)
-- [Images](image.md)
-- [Header and Quotes](headers.md)
-- [Code](code.md)
-- [Table](table.md)
-- [Task List](task-list.md)
-- [Extras](extras.md)
+- [Text](Markdown/Text/)
+- [List](Markdown/List/)
+- [Images](Markdown/Image/)
+- [Header and Quotes](Markdown/Header/)
+- [Code](Markdown/Code/)
+- [Table](Markdown/Table/)
+- [Task List](Markdown/TaskList/)
+- [Extras](Markdown/Extra/)

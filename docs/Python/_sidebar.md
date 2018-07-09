@@ -3,6 +3,7 @@ Programming language that lets you work quickly
 and integrate systems more effectively.
 
 **Fundamental Python**
+* [Install Python](Python/Installation/)
 * [Introduction](Python/Introduction/)
 * [Python Logic](Python/Logic/)
 * [I/O](Python/IO/)
@@ -13,14 +14,14 @@ and integrate systems more effectively.
 * [List](Python/List/)
 * [Dictionary](Python/Dictionary/)
 
-**Tips on Python**
+**More on Python**
 * [Math Library](Python/MathLibrary/)
 * [Built-in Functions](Python/BuildInFunctions/)
 * [Built-in Methods](Python/BuildInMethod/)
 * [Dealing with PyLint + PEP8](Python/PyLint)
 
 **Advanced Python**
-* [Runtime on Python](Python/Runtime/)
+* [Python Runtime](Python/Runtime/)
 * [Try and Except](Python/TryAndExcept/)
 * [Raising and Catching Exceptions](Python/Exception/)
 * [Class and Objects](Python/OOP/)
