@@ -25,11 +25,30 @@ numbers = [1, 2, 3, 4]
 ```
 
 ## เข้าถึงข้อมูลใน List
-มีหลายวิธีในการเอาข้อมูลไปใส่
-as visualized from kumamon
+น้องๆสามารถเข้าถึงข้อมูลได้โดยการใช้ [] เหมือน String เลย
+
+ตัวอย่างเช่น
+```python
+kumamon = ['Kumamon', 'is', 'so', 'cute']
+var1 = kumamon[0]
+
+print(var1) # ก็จะได้ผลลัพท์เป็น 'Kumamon'
+type(var1) # ก็จะเป็นประเภท String
+```
+
+หรืออาจจะเลือกหลายๆอันเหมือน String เช่น
+```python
+kumamon = ['Kumamon', 'is', 'so', 'cute']
+var1 = kumamon[0:2]
+
+print(var1) # ก็จะได้ผลลัพท์เป็น ['Kumamon', 'is', 'so']
+type(var1) # ก็จะออกมาเป็น <class 'list'> (ตัวแปรประเภท list)
+```
 
 
 ## การนับลำดับของ List
+หลักการของการนับลำดับข้อมูลใน List ก็เหมือนกับ String นะครับ
+โดยให้ตัวแรกมีค่าเท่ากับ 0 และนับไปเรื่อยๆครับ
 | **Value**          | Kumamon | is | so | cute |
 | ------------------ | ------- | -- | -- | ---- |
 | **Array Number**   | 0       | 1  | 2  | 3    |
@@ -65,17 +84,29 @@ text1 += text2
 ```
 
 ## การแปลงระหว่าง String และ List
-### แปลง String -> List ด้วย .split()
+### แปลง String -> List ด้วย `.split()`
+
+ตัวอย่างการใช้งาน
 ```Python
-How to use:
-<variable name>.split("<separator you are using>")
-
-
 text = "I am a happy Kumamon"
-return text.split() # Returns array ['I', 'am', 'a', 'happy', 'Kumamon']
+text = text.split() 
+# ตัวแปร text มีค่าเป็น ['I', 'am', 'a', 'happy', 'Kumamon']
 
 text = "I,am,a,happy,Kumamon"
-return text.split(",") # Returns array ['I', 'am', 'a', 'happy', 'Kumamon']
+text = text.split(",") 
+# ตัวแปร text มีค่าเป็น ['I', 'am', 'a', 'happy', 'Kumamon']
+```
+
+### Using .join()
+```Python
+"""
+How to use:
+<separator you want to use>.join(<array variable>)
+-> Return the new text that have been joined
+"""
+
+text = ['I', 'am', 'a', 'happy', 'Kumamon']
+print(" ".join(text)) # Prints out "I am a happy Kumamon"
 ```
 
 ## แก้ไขข้อมูลใน List
@@ -129,16 +160,37 @@ my_list = my_list.sort()
 # Return ValueError because integer cannot be compared with character
 ```
 
-# Using Elements in Array
-### Using .pop()
-.pop() will return that value and then remove that item
-```Python
-"""
+## หาข้อมูลใน List
+### หาว่าข้อมูลอยู่ที่ลำดับใดด้วย .index()
+ตัวอย่างการใช้งาน
+```
+<list_variable>.list(<key>)
+```
+
+วิธีการใช้งาน
+```
+my_list = ["Happy", "Funny", "Fat"]
+index_number = my_list.index("Happy")
+
+print(index_number)
+```
+ก็จะแสดงค่าออกมาเป็น 0 เพราะคำว่า "Happy" อยู่ที่ลำดับที่ 0
+
+
+# ลบข้อมูลใน List
+### นำข้อมูลออกไปและไปแทนในตัวแปรด้วย .pop()
+.pop() หากถูกเรียกใช้แล้ว ก็จะคืนค่าเข้าไปอยู่ใตัวแปรที่เรียก และทำการลบข้อมูลนั้นออกจาก List เลย<br>
+ให้คิดว่ามันคือการย้ายข้อมูลเข้าไปในตัวแปรนั่นเอง
+
+วิธีการใช้งาน
+```
 How to use:
 <variable name>.pop("<character/text/array number you want to use>")
 -> Returns the selected item, and removing them from array
-"""
+```
 
+ตัวอย่างการใช้งาน
+```Python
 my_list = ["Happy", "Funny", "Fat"]
 print(my_list.pop(1))
 
@@ -146,41 +198,26 @@ print(my_list.pop(1))
 # and my_list = ["Happy", "Fat"]
 ```
 
-# Remove Elements in Array
-### Using .remove()
-.remove() will remove that element from the array
-```python
-"""
-How to use:
+### นำข้อมูลออกจาก List ด้วย .remove()
+.remove() จะทำการลบข้อมูลที่น้องเลือกออกจากตั list เลย
+
+!> และหลังจากการทำ `.remove()` ตัว List จะทำการคำนวณลำดับใน list ใหม่
+
+ตัวอย่างการใช้งาน
+```
 <variable name>.remove("<character/text/array number you want to remove>")
 -> Variable will update as you wish
-"""
+```
 
+วิธีก่รใช้งาน
+```python
 my_list = ["Happy", "Funny", "Fat"]
 my_list.remove("Funny")
 
 # my_list is now equals to ["Happy", "Fat"]
 ```
 
-## Using .strip()
-```Python
-"""
-How to use:
-<variable name>.strip("<character/text you want to remove>")
--> Returns the text that have been modified
-"""
-
-text = "ABCDE"
-return text.strip("A") # Returns "BCDE"
-
-text = "ABCDEAAAA"
-return text.strip("A") # Returns "BCDE"
-
-text = "ABAACAABA"
-return text.strip("AB") # Returns "C"
-```
-
-### Using .replace()
+### แทนค่าใน List ด้วย .replace()
 ```Python
 """
 How to use:
@@ -192,27 +229,3 @@ text = "Hello, my name is Kumamon"
 return text.replace("Kumamon", "Rillakuma")
 # Returns "Hello, my name is Rillakuma"
 ```
-
-### Using .join()
-```Python
-"""
-How to use:
-<separator you want to use>.join(<array variable>)
--> Return the new text that have been joined
-"""
-
-text = ['I', 'am', 'a', 'happy', 'Kumamon']
-print(" ".join(text)) # Prints out "I am a happy Kumamon"
-```
-
----
-
-# Introduction to Tuples
-Tuples is an array, with a catch. They **cannot be replaced, removed, modify** after being created.
-
-Syntactically, a tuple is a comma-separated list of values:
-```Python
-text = ('k', 'u', 'm', 'a', 'm', 'o', 'n')
-```
-
-and it basically works the same as list.
