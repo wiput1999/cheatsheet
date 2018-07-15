@@ -1,19 +1,19 @@
 # Dictionary
-Dictionary is similar to list. But they will require these two to complete:
+Dictionary เป็นการเก็บข้อมูลประเภทหนึ่ง ซึ่งจะมีความคล้ายคลึงกับการเก็บตัวแปรหลายๆอันเข้าไปสู่ตัวแปรเดียวกัน
 
-- Key
-- Value
+โดย Dictionary จะมีข้อมูลอยู่ 2 ประเภท นั่นคือ
 
-Where key is for keeping the value (like variable, but you may use numbers and strings)
-And the value will store the value of the key.
+- Key (หากเปรียบเทียบ ก็คือตัวแปร)
+- Value (หากเปรียบเทียบ ก็คือค่าที่อยู่ในตัวแปร)
 
-# Creating your new dictionary
+แต่น้องๆก็อย่าลืมว่า Dictionary สามารถเก็บข้อมูลได้หลายๆอัน ทำให้น้องๆสามารถเรียกค่า (Key) เพื่อเอาผลลัพท์ (Value) ได้
+
+## สร้าง dictionary เปล่า
 ```python
 my_dictionary = dict()
 ```
 
-or you can start defining your dictionary
-
+## สร้าง dictionary โดยการเขียนเอง
 ```python
 my_dictionary = {
 "happy" : 20,
