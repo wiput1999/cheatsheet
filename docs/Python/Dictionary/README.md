@@ -8,12 +8,15 @@ Dictionary เป็นการเก็บข้อมูลประเภท
 
 แต่น้องๆก็อย่าลืมว่า Dictionary สามารถเก็บข้อมูลได้หลายๆอัน ทำให้น้องๆสามารถเรียกค่า (Key) เพื่อเอาผลลัพท์ (Value) ได้
 
-## สร้าง dictionary เปล่า
+## สร้าง dictionary
+### สร้าง Dictionary เปล่าๆ
+โดยการใช้ฟังก์ชั่น `dict()` เพื่อเปลี่ยนตัวแปรให้เก็บข้อมูลแบบ Dictionary
 ```python
 my_dictionary = dict()
 ```
 
-## สร้าง dictionary โดยการเขียนเอง
+### สร้าง dictionary โดยการเขียนเอง
+โดยฝั่งซ้ายจะเป็นค่า key และฝั่งขวาจะเป็นค่า value
 ```python
 my_dictionary = {
 "happy" : 20,
@@ -22,19 +25,18 @@ my_dictionary = {
 }
 ```
 
-# Accessing the value from key
+## เอาข้อมูลออกมาจาก Dictionary
 ```python
 my_dictionary['happy'] # Returns 20
 ```
 
-or checking if this key or value exists in dictionary
-
+หรือน้องๆอาจจะเช็คก่อนว่ามี key นั้นๆอยู่หรือเปล่าโดยการใช้ keyword `ìn`
 ```python
 "happy" in my_dictionary # Return true
 20 in my_dictionary # Return true
 ```
 
-# Adding key and value to the dictionary
+# เพื่มค่าเข้าใปใน Dictionary
 You can add it like list.
 ```python
 alphabet = input()

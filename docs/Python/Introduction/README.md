@@ -69,6 +69,4 @@ print(bool4)
 print(bool5)
 ```
 
-## [DocString](Python/Introduction/Docstring/)
-## [Logical Operator](Python/Introduction/LogicalOperator/)
-## [Variable](Python/Introduction/Variable/)
+[DocString](Python/Introduction/Docstring/)  [Logical Operator](Python/Introduction/LogicalOperator/)  [Variable](Python/Introduction/Variable/)

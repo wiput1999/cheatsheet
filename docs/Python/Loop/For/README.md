@@ -1,22 +1,14 @@
-## วิธีการใข้ `FOR` loop
+## วิธีการใช้ `FOR` loop
 ![](https://www.programtopia.net/sites/default/files/for_0.png)
 หลังจากน้องได้เรียน loop ที่จะหยุดเมื่อเงื่อนไขถูกต้องไปแล้ว ตอนนี้ก็จะมาเรียนแบบใหม่่กัน<br>
 นั่นก็ีคือ FOR loop นั่นเอง
 
-FOR loop นั่นเอาไว้ใช้ทำ loop ที่มีปริมาณ loop อธิบายไว้<br>
+`FOR` loop นั่นเอาไว้ใช้ทำ loop ที่มีปริมาณ loop อธิบายไว้<br>
 เช่นให้ loop 5 ครั้ง หรือ loop ตามขนาดความยาวของตัวอักษร (String)
 
 นี่ก็คือวิธีใช้งาน for loop ครับ
 ```python
-for <variable> in range(<stop>):
-```
-หรือ
-```python
-for <variable> in range(<start>, <stop>):
-```
-หรือ
-```python
-for <variable> in range(<start>, <stop>, <step>):
+for <variable> in <list or string>:
 ```
 
 ถ้ายังใช้ไม่เป็น ก็มีตัวอย่างมาให้ดูครับ
@@ -33,7 +25,7 @@ for i in range(10):
 !> อย่าลืม<br>
 ว่า array เรื่มที่ 0 นะจ๊ะ
 
-หากน้องๆยังไม่เข้าใจ keyword `in` และฟังก์ชั่น `range()` ก็จะอยู่หลังๆเลยจ้า
+หากน้องๆยังไม่เข้าใจ keyword [`in`](Python/Loop/For/?id=in-keyword) และฟังก์ชั่น [`range()`](Python/Loop/For/?id=การใช้-range) ก็จะอยู่หลังๆเลยจ้า
 
 **โจทย์ปัญหา** อยากวนเท่ากับตัวเลขในตัวแปร
 ```python
@@ -113,7 +105,7 @@ main()
 
 ---
 
-## `IN` Keyword
+## การใช้ keyword `IN`
 `in` keyword is pretty much like equal sign. But it can return true if **some** element does qualify.
 
 ```python
@@ -136,7 +128,8 @@ shopping_list = ['Apple', 'Banana', 'Peanut', 'Butter', 'Jelly']
 "Kumamon" in shopping_list # Returns false
 ```
 
-## การใช้ range()
+## การใช้ฟังก์ชั่น `range()`
+การใช้ฟังก์ชั่นนี้ ก็จะคืนค่าออกมาเป็น list ที่มีตัวเลข (integer) เรียงตามที่ให้ parameter มา
 ```python
 How to use:
 range(<stop>)
@@ -144,13 +137,14 @@ range(<start>, <stop>)
 range(<start>, <stop>, <step>)
 
 Example
-range(10) # Returns 0,1,2,3,4,5,6,7,8,9
-range(1,10) # Returns 1,2,3,4,5,6,7,8,9,10
-range(1,10,2) # Returns 2,4,6,8,10
+range(10)       # Returns 0,1,2,3,4,5,6,7,8,9
+range(1, 10)    # Returns 1,2,3,4,5,6,7,8,9,10
+range(1, 10, 2) # Returns 2,4,6,8,10
 ```
 range is a number array that continues the number as you like
 
 **ตารางเปรียบเทียบ**
+
 | Loop Type / Sample Environment | **For**      |**While**          |
 | ------------------------------ | ------------ | ----------------- |
 | Requires to start              | Amount of loops | Argument that still true |

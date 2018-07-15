@@ -103,6 +103,5 @@ text4 = "12" # ค่า '12' (string) จะไม่เท่ากับ 12 (
 
 ---
 
-สำหรับเนื้อหา String Array และ String Format ก็สามารถคลิกดูได้ที่ลี้งก์ข้างล่างครับ
-## [String Array](Python/String/Array/)
-## [String Format](Python/String/Format/)
+สำหรับเนื้อหา String Array และ String Format ก็สามารถคลิกดูได้ที่ลี้งก์ข้างล่างครับ<br>
+[String Array](Python/String/Array/)  [String Format](Python/String/Format/)

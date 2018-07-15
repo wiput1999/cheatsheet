@@ -1,6 +1,6 @@
 # Introduction to While Loop
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/While-loop-diagram.svg/440px-While-loop-diagram.svg.png)
-<br>*Photo from Wikipedia.com*
+<br>*ภาพประกอบจาก Wikipedia.com*
 
 โดย `while` ก็คือการ **วนเมื่อเงื่อนไขยังคงถูกต้อง** และจะทำการหยุดเมื่อเงื่อนไขไม่เป็นจริงแล้ว หากน้องยังไม่เข้าใจก็ให้อ่านใหม่ครับ แต่ถ้าเข้าใจแล้วก็อ่านเรื่องต่อไปได้เลย
 
@@ -17,17 +17,14 @@ while <arguments>:
 ```python
 count = 10
 while count > 5:
-    print(count)
+    print(count, end=" ")
     count = count - 1
-
-# Results
-10
-9
-8
-7
-6
 ```
 
+ก็จะได้ค่าออกมาเป็น
+```
+10 9 8 7 6
+```
 
 ## Infinite Loop
 ![](http://3.bp.blogspot.com/_F7vpRIjAvYI/TIU7VpNlbzI/AAAAAAAABoI/s2clJ4LoWO0/s1600/image.png)
@@ -124,7 +121,8 @@ print("Loop is complete!")
 น้องก็จะเห็นว่า พอ i = 5 แล้ว ก็จะไม่รันโค้ดด้านล่างเลย (บรรทัดที่ 7 เป็นต้นไป)<br>
 แต่เนื่องจากว่าบรรทัดที่ 9 นั้นไม่ได้อยู่ใน loop เลยรันได้อย่างปกติดี
 
-พี่ก็เลยทำสรุปเอาไว้สำหรับ break และ continue ดังน้ีครับ
+พี่ก็เลยทำสรุปเอาไว้สำหรับ break และ continue ดังนี้ครับ
+
 |              | **break**       | **continue**                 |
 | ------------ | --------------- | ---------------------------- |
 | **เพื่อเอาไว้** | หยุด loop  | เรื่ม loop ใหม่ทันที          |
