@@ -1,12 +1,14 @@
-# My Code Cheatsheet
-This is my personal cheatsheet for learning how to code during a study in KMITL.
+# Code Cheatsheet
+ใน Repository นี้ก็จะรวบรวมการเขียน และวิธีเขียนภาษาโปรแกรมมิ่งของพี่เอง
 
-Please do not copy my source code in a manual way. You always can [fork]() this repo.
+## How to use
+ให้เปิดเว็บไซต์ [sagelga.github.io/cheatsheet/](https://sagelga.github.io/cheatsheet/#/) และก็สามารถใช้ได้เลย
 
+แต่สำหรับนักพัฒนาที่ต้องการพัฒนา Repository นี้ ก็สามารถดูวิธีการรันได้จากเว็บไซต์ของ Docsify เพราะเราใช้มันเพื่อการจัดการ Repository นี้ทั้งหมด
 
----
-Please read CONTRIBUTE.md for more information on how you can help me!
+## Contribution
+Repository นี้เปิดเป็น Public เพื่อให้นักพัฒนาได้เข้ามาแก้ไข Document ต่างๆได้<br>
+กรุณาเข้าไปดูไฟล์ [CONTRIBUTE.md]() เกี่ยวกับวิธีการทำ Pull Request กับ Repository นี้ครับ
 
-
-This website runs on VuePress. : https://vuepress.vuejs.org/
-
+Thank You!
+-- Kunanon S.
