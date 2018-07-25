@@ -1,9 +1,8 @@
-
-* [🏠 Home](https://sagelga.github.io/cheatsheet/)
-* [Course](_sidebar.md)
+* [🏠 Home](/#)
+* Course
     * [C](C/)
     * [Python](Python/)
-    * [SQL](MySQL/)
+    * [SQL](SQL/)
     * [Markdown](Markdown/)
     * [Django](Django/)
     * [Git](Git/)

@@ -1,6 +1,7 @@
 ## Start the project
 Get into the project
 
+These files will be **automatically generated**.
 - `__init.py__` makes the Python to treat the folder as package. It will be a blank file.
 - `settings.py` Store Settings
 - `urls.py` store URL (page) for the file
@@ -14,19 +15,21 @@ python manage.py runserver
 ```
 or click run on PyCharm
 
-> Web App != Project
+!> **Warning**<bR>
+Web App != Project
 
 ## Create new Web Applications
 ```
 python manage.py startapp <app_name>
 ```
 
-and it will create a new folder with `<app_name>`
-- `__init__` make Python treats it as package
+and it will create a new folder with `<app_name>`.<br>
+These files will be automatically generated.
+- `__init__.py` make Python treats it as package
 - `admin.py` register models to benefits admin interface
 - `apps.py` place application's configurations
 - `models.py` store data models + store entity/relationships of data
 - `tests.py` store functions to test code
+- `urls.py` handle URL naming
 - `views.py` handle request + response
-- "migrations" folder store database informations on models + templates
-
+- *migrations* folder store database informations on models + templates

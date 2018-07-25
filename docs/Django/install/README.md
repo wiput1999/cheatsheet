@@ -3,6 +3,8 @@ To install, you can get it from multiple ways.
 
 One way is to use PyCharm Professional, as it will automatically install + create VM for you. 
 
+In Python Virtual Environment, it is name "VirtualEnv".
+
 Python VM will isolates the Python package, so it can be delete without annoying the global thing. 
 
 And another way is to download it using Conda (Anaconda). This will update Python for you automatically + includes Data Science tools (eg. JuPyter)
