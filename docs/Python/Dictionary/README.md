@@ -27,10 +27,10 @@ my_dictionary = dict()
 my_dictionary = {
 "happy" : 20,
 "not happy" : 30,
-"sad" : False,
+"sad" : False
 }
 
-my_dictionary = {"happy" : 20, "not happy" : 30, "sad" : False, }
+my_dictionary = {"happy" : 20, "not happy" : 30, "sad" : False}
 ```
 โดยน้องๆอาจจะเขียนแบบที่ 1 ที่จะแยกบรรทัด หรือเขียนแบบบรรทัดเดียวกันก็ได้ครับ
 
@@ -135,7 +135,7 @@ NameError: name 'mydict' is not defined
 
 ตัวอย่างการใช้งาน
 ```python
-my_dictionary = {"happy" : 20, "not happy" : 30, "sad" : False, }
+my_dictionary = {"happy" : 20, "not happy" : 30, "sad" : False}
 
 print(my_dictionary.keys())
 print(my_dictionary.values())
