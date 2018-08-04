@@ -2,9 +2,7 @@
 PEP8 คือ standard ของการเขียนโปรแกรม เพื่อให้คนอื่นๆ อ่านออกนะครับ ดังนั้นมันจึงเป็นเรื่องสำคัญที่จะต้องเขียนให้ผู้เขียนและผู้อ่าน เข้าใจว่าโปรแกรมนี้ทำงานอย่างไร<br>
 โดย PEP8 นั้นถูกเขียนไว้ที่ Python Foundation : [https://www.python.org/dev/peps/pep-0008/](https://www.python.org/dev/peps/pep-0008/)
 
-``` note
-พี่มงเจอแค่ปัญหาพวกนี้นะครับ ถ้าอันไหนพี่ยังไม่ได้อธิบาย ฝากเขียนไว้ใน Issues ให้พี่ด้วยจ้า [https://github.com/sagelga/PreProgramming-60/issues](https://github.com/sagelga/PreProgramming-60/issues)
-```
+> พี่มงเจอแค่ปัญหาพวกนี้นะครับ ถ้าอันไหนพี่ยังไม่ได้อธิบาย ฝากเขียนไว้ใน Issues ให้พี่ด้วยจ้า
 
 ---
 
@@ -49,7 +47,7 @@ happy()
 ---
 
 ## Invalid Data Type
-เป็นการบอกว่าไม่สามารถทำการแปลงประเภทตัวแปร (Data Type Casting) ได้
+เป็นการบอกว่าไม่สามารถทำการแปลงประเภทตัวแปร (Casting) ได้
 
 เช่น
 ```python
@@ -63,14 +61,17 @@ int(input())
 ## Invalid Syntax
 การใช้ฟังชั่นที่ใช้ชื่อผิด ใช้ผิดวิธี โมดูลขาด argument หรือ ไม่ได้เรียกโมดูลที่ต้องการใช้มาก่อน
 
+พูดง่ายๆก็คือโค้ดอ่านไม่ออกนั่นเอง
+
 เช่น
 ```python
 import math
 var_x = pi()
 ```
-ซื้ง pi() ไม่ใช่ฟังชั่นใน python หลัก แต่เป็นส่วนหนึ่งของ library ชื่อ math
 
-ดังนั้นจึงต้องใช้
+ซื่ง pi() ไม่ใช่ฟังชั่นใน python หลัก แต่เป็นส่วนหนึ่งของ library ชื่อ math
+
+ดังนั้น หากจะแก้ให้ถูก จึงต้องใช้
 ```python
 import math
 var_x = math.pi()
@@ -95,17 +96,16 @@ print(var_x + var_y)
 
 ---
 
-## Variable Error & Variable Name
+## Variable Error
 การตั้งชื่อ Variable ก็เป็นสี่งจำเป็นในการทำ python เนอะ เพราะก็เอาไว้เก็บค่าตัวแปร
 
 แต่การตั้งชื่อตัวแปรที่ง่ายๆ มันมักจะทำให้จุดอื่นๆพังไปด้วย
 
 เช่น
-
 ```python
 import math
 math = "Kumamon" # ตั้งชื่อตัวแปรเหมือนชื่อ library
-print(math.fabs(20-99))
+print(math.fabs(20 - 99))
 ```
 ก็จะทำให้มันงง ว่าจะให้โหลด library หรือเรียกตัวแปรที่ชื่อว่า math
 
@@ -120,23 +120,25 @@ print(aaa + bbb)
 
 ดังนั้นพี่มงเลยมี Checklist ที่มันน่าจะด่านะครับ :)
 
-Number|Type|Meaning|Example
+| |Type|Meaning|Example|
 -|-|-|-
-1|Short Variable|ชื่อตัวแปรสั้นเกินไป|เช่น a
-2|Long Variable|ชื่อตัวแปรยากเกินเหตุ|เช่น Uvuvwevwevwe_Onyetenyevwe_Ugwemubwen_Ossas
-3|Variable Name is the same as function|ชื่อตัวแปรเหมือนชื่อฟังชั่น|เช่น if
-4|Easy variable name|ตั้งชื่อตัวแปรอย่างง่ายๆ|เช่น aaa
-5|Capitalized Variable|ตัวแปรที่มีการตั้งเป็นตัวใหญ่ด้านหน้า (เนื่องจากจะซ้ำกับวิธีประกาศ class)|เช่น Num_1
-6|Camel Cased Variable|ตัวแปรที่ใช้การตั้งค่าเป็นตัวใหญ่แบ่งคำ (เนื่องจากจะซ้ำกับวิธีประกาศชื่อ function)|เช่น distanceOverTime
-7|All Capitalized Variable (inside function)|ตัวแปรที่เป็นตัวใหญ่หมดเมื่อประกาศใน Local Variable|เช่น DISTANCE
-8|Weird Variable Name|ตัวแปรไม่บ่งบอกถึงการใช้งาน|เช่น num_1 สำหรับการเก็บค่า distance
+1|Short Variable|ชื่อตัวแปรสั้นเกินไป|เช่น<br>`a`
+2|Long Variable|ชื่อตัวแปรยากเกินเหตุ|เช่น<br> `Uvuvwevwevwe_Onyetenyevwe_Ugwemubwen_Ossas`
+3|Variable Name is the same as function|ชื่อตัวแปรเหมือนชื่อฟังชั่น|เช่น<br>`if`
+4|Vague Variable Name|ตั้งชื่อตัวแปรอย่างง่ายๆ|เช่น<br>`aaa`
+5|Capitalized Variable|ตัวแปรที่มีการตั้งเป็นตัวใหญ่ด้านหน้า (การเขียนแบบนี้เอาไว้ใช้สำหรับการเขียนชื่อ class)|เช่น<br>`Num_1`
+6|Camel Cased Variable|ตัวแปรที่ใช้การตั้งค่าเป็นตัวใหญ่แบ่งคำ (ซ้ำกับวิธีการตั้งชื่อ function)|เช่น<br>`distanceOverTime`
+7|All Capitalized Variable (inside function)|ตัวแปรที่เป็นตัวใหญ่หมดเมื่อประกาศใน Local Variable|เช่น<br>`DISTANCE`
+8|Weird Variable Name|ตัวแปรไม่บ่งบอกถึงการใช้งาน|เช่น<br>`num_1` สำหรับการเก็บค่า `distance`
 
 ดังนั้น น้องๆจะต้องระวังในการตั้งชื่อนะครับ
+
+และระบบก็จะไม่แจ้งนะครับ ว่าตัวแปรไหนผิดด้วยสาเหตุใด น้องๆก็ต้องไปดูแล้วทำการแก้ไขด้วยตนเองนะครับ
 
 ---
 
 ## Bad White Space
-การที่มี white space ในจุดที่มันไม่จำเป็น เป็นการเสียทรัพยากรในการให้ Python ทำงานนะครับ และ ทำให้เพื่อนๆของน้อง อ่านโค้ดของน้องได้ยากขื้น
+การที่มี white space ในจุดที่มันไม่จำเป็น เป็นการทำให้โค้ดของน้องๆสกปรก ไม่ดีเลย
 
 เช่น
 (พี่จะแทน space ด้วย * นะครับ จะได้เห็นกันง่ายๆ)
@@ -147,17 +149,17 @@ var_x,var_y = 12,21
 print(var_x,var_y)
 ```
 
-ในนี้ Pylint จะด่า
-```python
-print("Hello World")*
-```
-เนื่องจาก มี white space หลังบรรทัดนะครับ มันไม่จำเป็นต้องมีเลย
+ในนี้ Pylint จะด่าในบรรทัด `print("Hello World")*`
+เพระตัว PyLint เห็น Whitespace ในตัวสุดท้ายนั่นเอง
 
+อีกเหตุการณ์หนึ่งของการเกิด Whitespace ก็คือกด space หรือไม่กด ตามที่ standard เขียนไว้ ตัวอย่างเช่น 
 ```python
 var_x,var_y = 12,21
 print(var_x,var_y)
 ```
-จะด่า เพราะ การใช้ , ควรจะเหมือนเขียนภาษาอังกฤษนะครับ ต้องมี space หลัง , นะจ๊ะ ดังนั้นมันควรเป็นแบบนี้
+
+ตัว PyLint จะด่า `print(var_x,var_y)`  เพราะ การใช้ , ควรจะเหมือนเขียนภาษาอังกฤษนะครับ ต้องมี space หลัง , นะจ๊ะ ดังนั้นมันควรเป็นแบบนี้
+
 ```python
 var_x, var_y = 12, 21
 print(var_x, var_y)
@@ -186,12 +188,14 @@ def kumamon():
   var_m = 23
 kumamon()
 ```
-หากเก็บแบบนี้ ไฟล์จะใหญ่ และทำงานได้ช้ามาก ดังนั้น ควรมาใช้ Array หรือ Dict แทนนะครับ
+การเก็บข้อมูลแบบนี้ดูเหมือนจะเปลืองทรัพยากรการเก็บข้อมูลมากเลย มันเลยด่านะครับ
+
+น้องๆควรที่จะใช้ List หรือ Dict แทน เพื่อให้เก็บข้อมูลให้เรียกใช้งานได้มากกว่านี้ครับ
 
 ---
 
 ## Too much Global Variable
-เหมือนกับข้อที่แล้วเลยจ้า มันเปลืองพื้นที่ (เปลืองมากกว่า local อีกนะครับ จะบอกให้)
+เหมือนกับข้อที่แล้วเลยจ้า มันเปลืองพื้นที่ (การเก็บตัวแปรเป็นแบบ Global เปลืองทรัพยากรมากกว่า local อีกนะครับ จะบอกให้)
 
 เช่น
 ```python
@@ -201,22 +205,23 @@ kumamon()
   VAR_D = 15
   VAR_E = 15
 ```
+เพราะการเก็บตัวแปรแบบ Global เหมาะกับตัวแปรที่ถูกเปลี่ยนแปลงบ่อย หรือตัวแปรที่ทุก Function ควรรู้ครับ
 
 ---
 
 ## Line is too long
 เป็นการบอกว่าโปรแกรมในแถวใดแถวหนึ่งยาวมาก <br>
-โดยปกติแล้ว โปรแกรมก็ไม่ควรที่จะยาวเกิน **100 ตัวอักษร** อยู่แล้ว เพราะเดี๋ยวจะอ่านไม่ออกและดูน่ารำคาญ
+โดยปกติแล้ว โปรแกรมก็ไม่ควรที่จะยาวเกิน **100 ตัวอักษร** อยู่แล้ว เพราะด้วยเหตุผลการอ่านไม่ออกล้วนๆครับ
 
 เช่น
 ```python
-  print("This is a very long string, and they are more than 100 character long. They just keep going and going and going and going and going and going and going and going and going and going")
+print("This is a very long string, and they are more than 100 character long. They just keep going and going and going and going and going and going and going and going and going and going")
 ```
 
 ---
 
 ## Too many condition branch
-เมื่อน้องต้องการทำ If statement แล้วใช้มากเกินเหตุ หรือ ซ้อนกันมาก (Chained)
+เมื่อน้องต้องการทำ statement ซ้อนกันมาก (Chained IF หรือ Chain Loop) ก็จะโดนด่าแบบนี้ครับ
 
 เช่น
 ```python
@@ -267,7 +272,7 @@ kumamon()
                                                                 print("Var_x is equal to", var_x)
 
 ```
-หากว่าน้องอยากจะใช้เยอะจริงๆ การใช้งานหลายฟังชั่น ก็เป็นวิธีหนึ่งในการช่วยให้น้องเขียนโค้ดน้อยลงเนอะ
+หากว่าน้องอยากจะใช้เยอะจริงๆ พี่ก็แนะนำว่าให้น้องใช้หลักการ Function หรือ Recursion แทนนะครับ จะประหยัดบรรทัดโค้ดลงไปได้เยอะเลย
 
 ---
 
@@ -292,12 +297,14 @@ kumamon()
 ```
 ซึ่งเวลาน้องเห็นบน Text Editor มันจะเหมือนกันมากๆเลย แทบจะดูไม่ออก ดังนั้น น้องต้องระวังนะครับ
 
+พี่ก็ขอแนะนำให้น้องเปิด Invisible Character หรือน้องก็สามารถเอา mouse ไปลากได้ โดยหากว่าเป็น space น้องๆก็จะเห็นเป็นจุด (°) แต่หากว่าเป็น TAB ก็จะเห็นเป็นลูกศร (⇥) ครับ
+
 ---
 
 ## Too many arguments in function
-การส่งค่าให้กับฟังชั่นอื่นๆ มากเกินไป
+เป็นคำเตือนที่เกิดขึ้นจากว่า น้องทำการเขียน Function และรับ Parameter มากเกิดไปครับ
 
-เช่น
+ตัวอย่างเช่น
 ```python
 def kumamon():
   var_a = int(input())
@@ -353,3 +360,7 @@ print(x) if (x > 12)
 ```
 
 Pylint จะด่า เพราะน้องส่งตัวแปรให้กับฟังชั่น calculate มากเกินไป :(
+
+---
+**Reference**
+- EJudge Pylint

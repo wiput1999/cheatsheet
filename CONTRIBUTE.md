@@ -18,38 +18,14 @@ For development + hotfix release
 
 ↑
 
-python  
-For Python document development
-
-↑
-
 python/your_username 
 This is your branch, that do works on Python document
 ```
 
 ## How to contribute
 - ทำการ Fork ตัว repository นี้
-- สร้าง branch ใหม่ จากการแตกออกมาจาก branch ภาษาต่างๆ (เช่น Python) โดยตั้งชื่อ branch เป็นชื่อภาษาตามด้วย username ของท่านเอง (ตัวอย่างเช่น หากว่า username คือ sagelga ก็ให้สร้าง branch ใหม่เป็นชื่อ python/sagelga)
+- สร้าง branch ใหม่ จากการแตกออกมาจาก branch develop โดยตั้งชื่อ branch เป็นชื่อภาษาตามด้วย username ของท่านเอง (ตัวอย่างเช่น หากว่า username คือ sagelga และต้องการแก้ไขภาษา Python ก็ให้สร้าง branch ใหม่เป็นชื่อ python/sagelga)
 - แก้ไข หรือ เพื่มใน branch ใหม่ของท่านเอง และทำการ Pull/Push ปกติ
 - หากว่าท่านต้องการส่งการแก้ไขของท่าน ก็ให้สร้าง Pull Request มาโดยตั้ง merge ที่ branch ของภาษานั้นๆ
 - รอเพื่อให้งานของท่านนั้่นถูกตรวจสอบ
 - หากได้รับการอนุมัติ งานของท่านก็อาจจะไปอยู่ที่ branch เหนือกว่า
-
-## Commit Log
-```
-{Log Type} {Description}
-```
-
-For `{Log Type}`
-- Use `+` for additions
-- Use `+-` for modifications
-- Use `-` for deletions
-
-Example for Commit Log
-```
-+ Create Python/Dictionary page
-
-+- Edit Python/IO page
-
-- Remove .DS_File from Python/ folder
-```
