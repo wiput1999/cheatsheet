@@ -10,20 +10,20 @@
 ## Git Flow
 การทำงาน หรือ โฟลว์การทำงานของ Git
 * [โฟลว์การทำงานหลัก](Git/Flow/)
-* [สร้าง Pull Request](Git/Flow/PullRequest/)
-* [รีวิว Pull Request ใหม่](Git/Flow/PullRequest/Revision.md)
+* [สร้าง Pull Request](Git/Flow/PullRequest/Create.md)
+* [รีวิว Pull Request ใหม่](Git/Flow/PullRequest/Review.md)
 * [เลือกวิธีการ Merge Pull Request](Git/Flow/PullRequest/Method.md)
 
 ## Commiting
 การส่ง Version (หรือการทำ Checkpoint) ให้กับไฟล์
-* [เพิ่มไฟล์มาทำ Versioning (Git Add)](Git/Commiting/git-add.md)
-- [ตั้งให้ไม่สนใจการทำ Versioning (Git Ignore)](Git/Commiting/git-ignore.md)
-- [ยกเลิกการทำ Versioning (Git Rm)](Git/Commiting/git-rm.md)
-- [สร้าง Commit ใหม่ (Git Commit)](Git/Commiting/git-commit.md)
+* [เพิ่มไฟล์มาทำ Versioning (Git Add)](Git/Commiting/Add.md)
+- [ตั้งให้ไม่สนใจการทำ Versioning (Git Ignore)](Git/Commiting/Ignore.md)
+- [ยกเลิกการทำ Versioning (Git Rm)](Git/Commiting/Remove.md)
+- [สร้าง Commit ใหม่ (Git Commit)](Git/Commiting/Commit.md)
 
 ## Resetting
-- [ยกเลิกการแก้ไขไฟล์เดียว (Git Reset HEAD)](Git/)
-- [ยกเลิกการแก้ไขไฟล์ทั้งหมด (Git Reset --hard)](Git/)
+- [ยกเลิกการแก้ไขไฟล์เดียว (Git Reset HEAD)](Git/Reset/Head.md)
+- [ยกเลิกการแก้ไขไฟล์ทั้งหมด (Git Reset --hard)](Git/Reset/HardReset.md)
 
 ## Origin Setup
 การตั้งค่าปลายทางที่จัดเก็บไฟล์รวม
@@ -35,7 +35,7 @@
 ## Pushing
 การส่ง Version (Commit) ขึ้นปลายทาง
 - [Introduction (Git Push)](Git/Pushing/)
-- [การ Push โดยที่ปลายทางไม่เคยมี branch นั้นมาก่อน (Git Push --set-origin origin)](Git/)
+- [การ Push โดยที่ปลายทางไม่เคยมี branch นั้นมาก่อน (Git Push --set-origin origin)](Git/Pushing/SetOrigin.md)
 
 ## Pulling
 การอับเดท (การดึง) ไฟล์และเวอร์ชั่นมาจากปลายทาง
