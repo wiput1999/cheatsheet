@@ -23,19 +23,29 @@
         mergeNavbar: true,
 
         search: 'auto',
-        depth: 3,
+        depth: 1,
         subMaxLevel: 2,
         auto2top: true,
         formatUpdated: '{MM}/{DD} {HH}:{mm}',
     }
 </script>
+
+<script>
+    if (typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('sw.js')
+    }
+  </script>
+
+<!-- Additional Docsify plugin / extensions -->
 <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
 <script src="//unpkg.com/docsify/lib/plugins/zoom-image.min.js"></script>
 <script src="//unpkg.com/docsify-copy-code"></script>
+<script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
 
-<!-- We use Prism Syntax highlight: https://github.com/PrismJS/prism/tree/gh-pages/components-->
+<!-- For syntax highlight, Docsify use Prism : https://github.com/PrismJS/prism/tree/gh-pages/components -->
 <script src="//unpkg.com/prismjs/components/prism-python.min.js"></script>
 <script src="//unpkg.com/prismjs/components/prism-sql.min.js"></script>
 <script src="//unpkg.com/prismjs/components/prism-django.min.js"></script>
+<script src="//unpkg.com/prismjs/components/prism-git.min.js"></script>
 </body>
 </html>
